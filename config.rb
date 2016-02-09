@@ -36,7 +36,7 @@ set :vertical, data.autotune.theme
 configure :build do
    require 'uri'
   uri = URI(data.autotune.base_url)
-  set :absolute_prefix, "#{uri.scheme}://#{uri.host}"
+  #set :absolute_prefix, "#{uri.scheme}://#{uri.host}"
 
   set :url_prefix, uri.path
   set :http_prefix, data.autotune.base_url
